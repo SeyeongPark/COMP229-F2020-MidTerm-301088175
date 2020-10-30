@@ -33,6 +33,7 @@ router.get('/add', (req, res, next) => {
     /*****************
      * ADD CODE HERE *
      *****************/
+     //define 'books' for in details.ejs -> books:''
     res.render('books/details', {title: 'Add Book', books:''});
 });
 
@@ -80,6 +81,7 @@ router.get('/:id', (req, res, next) => {
         }
     })
 });
+
 // POST - process the information passed from the details form and update the document
 router.post('/:id', (req, res, next) => {
     /*****************
